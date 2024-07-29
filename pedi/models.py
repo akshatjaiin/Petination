@@ -44,7 +44,7 @@ class Like(models.Model):
 class Pet(models.Model):
     name = models.CharField(max_length=30)
     description = models.CharField(max_length=300)
-    breed = models.CharField(max_length=40, blank=False, null=True)  # Make sure it's required
+    breed = models.CharField(max_length=40, null=True)  # Make sure it's required
     public = models.BooleanField(default=True)
     adopt = models.BooleanField(default=True)
     petpfp = models.ImageField(upload_to='pet_pfp/', null=True)  # Required image field
