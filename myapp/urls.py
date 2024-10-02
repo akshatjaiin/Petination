@@ -20,7 +20,7 @@ from django.conf import settings  # Import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('pedi/', include("pedi.urls")),
+    path('', include("pedi.urls")),
 ]
 
 # Ensure to include the following only if DEBUG is True in your settings.py
